@@ -6,8 +6,6 @@ WORKDIR /var/www/html
 RUN apk --update upgrade && apk update && apk add curl ca-certificates && update-ca-certificates --fresh && apk add openssl
 
 RUN apk --update add \
-    --repository http://dl-cdn.alpinelinux.org/alpine/edge/main \
-    --repository http://dl-cdn.alpinelinux.org/alpine/edge/community \
         nginx \
         gzip \
         php7 \
